@@ -1,0 +1,40 @@
+.close {
+    text-decoration: none;
+    float: right;
+}
+
+div.modal {
+    background: rgba(0,0,0,0.6);
+
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+}
+
+div.box {
+    position: absolute;
+    left:50%;
+    top:50%;
+    border: 1px solid orange;
+    transform: translate(-50%,-50%);
+    border:5px solid #fff;
+    border-radius: 4px;
+    width: 30%;
+
+    background: white;
+    
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal .box > h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 0;
+}
